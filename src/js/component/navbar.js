@@ -6,11 +6,11 @@ import { Context } from "../store/appContext";
 export const Navbar = () => {
   const {store,actions} = useContext(Context)
   return (
-    <nav className="navbar navbar-light bg-light mb-3">
+    <nav className="navbar navbar-light bg-black mb-3">
       <div className="container">
         <Link to="/">
           {/* <span className="navbar-brand mb-0 h1">Star Wars</span> */}
-          <img style={{ width: "60px" }} src={starWarsLogo}></img>
+          <img style={{ width: "100px" }} src={starWarsLogo}></img>
         </Link>
         <div className="ml-auto">
           <div className="dropdown">
