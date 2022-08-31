@@ -1,4 +1,5 @@
-import React from "react";
+
+import React, {useEffect} from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
 
@@ -9,13 +10,17 @@ import injectContext from "./store/appContext";
 
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
+import {Details } from "./views/Details.js";
 
 //create your first component
 const Layout = () => {
 	//the basename is used when your project is published in a subdirectory and not in the root of the domain
 	// you can set the basename on the .env file located at the root of this project, E.g: BASENAME=/react-hello-webapp/
 	const basename = process.env.BASENAME || "";
-
+	const baseURL = process.env.baseURL || "";
+	useEffect(() => {
+		console.log(baseURL)
+	}, []) 
 	return (
 		<div>
 			<BrowserRouter basename={basename}>
@@ -30,7 +35,11 @@ const Layout = () => {
 						</Route>
 						<Route exact path="/single/:theid">
 							<Single />
-						</Route>
+							</Route>
+							<Route exact path="/:endpoint/:uid">
+								<Details></Details>
+							</Route>
+						
 						<Route>
 							<h1>Not found!</h1>
 						</Route>
