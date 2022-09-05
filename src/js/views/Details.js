@@ -20,7 +20,7 @@ export const Details = () => {
           <h2>
             {store.details && store.details.properties.name}
           </h2>
-            <p>
+            <p className=" text-light">
               Sed quis posuere nulla. Donec vel nisl porta, volutpat ex
               ultrices, sollicitudin magna. Ut mattis, justo at ornare
               consequat, nunc erat tempus ex, et facilisis lectus metus a diam.
@@ -32,11 +32,7 @@ export const Details = () => {
               consectetur nec ante. Nunc euismod tincidunt lacus at volutpat.
               Etiam ultricies, nulla quis vehicula bibendum, dolor augue
               eleifend nunc, quis bibendum lacus eros vitae lectus. Maecenas sit
-              amet nibh vel felis posuere fermentum. Pellentesque habitant morbi
-              tristique senectus et netus et malesuada fames ac turpis egestas.
-              Aliquam nec feugiat nisi, a dapibus ante. Morbi rhoncus odio quis
-              tincidunt lacinia. Nulla facilisi. Mauris sollicitudin pretium
-              sem, sit amet tincidunt nisl vehicula id.
+              amet nibh vel felis posuere fermentum.
             </p>{""}
 			
         </div>
