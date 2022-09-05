@@ -1,3 +1,35 @@
 /* 
     General Styles
 */
+
+body{
+    background-color: #1B1A17; 
+}
+
+#app{
+    background-color: #1B1A17;
+}
+
+.card-body{
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+
+.card-title{
+    color: white;
+}
+
+.card-text{
+    color: white; 
+}
+
+.card-info:hover{
+    transform: translateY(-3px);
+    transition-duration: .3s;
+
+}
+
+.btn-warning{
+    background-color: rgb(226, 206, 29);
+    color: black;
+    font-weight: bold;
+}

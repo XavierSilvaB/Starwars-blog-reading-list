@@ -8,7 +8,7 @@ const Card = (props) => {
   const {store,actions}= useContext(Context)
   return (
   	<div>
-      <div className="card p-2 mx-2 mb-3" style={{minWidth:"300px"}}>
+      <div className="card card-info mt-2 mx-2 mb-2" style={{minWidth:"300px"}}>
         <img src={starWarsImg} className="card-img-top" alt="..." />
         <div className="card-body">
           <h5 className="card-title">{props.item.name}</h5>

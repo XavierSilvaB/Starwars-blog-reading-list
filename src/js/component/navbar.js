@@ -15,7 +15,7 @@ export const Navbar = () => {
         <div className="ml-auto">
           <div className="dropdown">
             <button
-              className="btn btn-primary dropdown-toggle"
+              className="btn btn-warning dropdown-toggle"
               type="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"
