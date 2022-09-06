@@ -45,4 +45,4 @@ Card.proptype = {
 export default Card;
 
 
-// https://starwars-visualguide.com/#/
+// https:www//starwars-visualguide.com/#/

@@ -14,10 +14,10 @@ export const Details = () => {
     <div className="container">
       <div className="row">
         <div className="col">
-          <img src={starWarsImg} className="img-top" alt="..." style={{width:"800", height:"600" }} />
+          <img src={starWarsImg} className="img-details img-top" alt="..."  />
         </div>
         <div className="col">
-          <h2>
+          <h2 className="text-light">
             {store.details && store.details.properties.name}
           </h2>
             <p className=" text-light">

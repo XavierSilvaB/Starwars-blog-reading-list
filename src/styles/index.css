@@ -33,3 +33,10 @@ body{
     color: black;
     font-weight: bold;
 }
+
+.img-details{
+    width:800px;
+    height: 525px;
+    border-radius: 15px;
+
+}
