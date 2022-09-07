@@ -17,7 +17,7 @@ const Card = (props) => {
             bulk of the card's content.
           </p>
           <div className="d-flex justify-content-between">
-          <Link to={`/${props.endpoint}/${props.item.uid}`} className="btn btn-outline-primary" >
+          <Link to={`/${props.endpoint}/${props.item.uid}`} className="btn btn-outline-info" >
             Learn More!
           </Link>
           <button type="button" onClick={(e) => {

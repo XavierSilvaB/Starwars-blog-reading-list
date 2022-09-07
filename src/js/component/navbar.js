@@ -20,7 +20,7 @@ export const Navbar = () => {
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-              Favorites <span className="badge bg-secondary">{store.favorites.length}</span>
+              Favorites <span className="badge bg-black">{store.favorites.length}</span>
             </button>
             <ul className="dropdown-menu">
              {/* Aqui van los li */}
