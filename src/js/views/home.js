@@ -13,21 +13,21 @@ export const Home = () => {
 	return(
 	<div className="container principal">
 		
-		<h1 className="text-info my-3">Characters</h1>
+		<h1 className="p-title my-3">Characters</h1>
 		<div className="d-flex flex-row flex-nowrap overflow-auto">
 			{store.characters && store.characters.map((alien)=> {
 				return <Card key={alien.uid} item={alien} endpoint="people"/>
 			})}
 		</div>
 		
-		<h1 className="text-info my-3">Planets</h1>
+		<h1 className="p-title my-3">Planets</h1>
 		<div className="d-flex flex-row flex-nowrap overflow-auto">
 			{store.planets && store.planets.map((planet)=> {
 				return <Card key={planet.uid} item={planet} endpoint="planets"/>
 			})}
 		</div>
 		
-		<h1 className="text-info my-3">Vehicles</h1>
+		<h1 className="p-title my-3">Vehicles</h1>
 		<div className="d-flex flex-row flex-nowrap overflow-auto">
 			{store.vehicles && store.vehicles.map((vehicle)=> {
 				return <Card key={vehicle.uid} item={vehicle} endpoint="vehicles"/>

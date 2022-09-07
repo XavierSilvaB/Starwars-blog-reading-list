@@ -36,7 +36,7 @@ const getState = ({ getStore, getActions, setStore }) => {
           .catch((err) => console.log(err));
       },
       getInfo: async() => {
-        const p1 = fetch(baseURL + 'people/');
+        const p1 = fetch(baseURL + '/people/');
         const p2 = fetch(baseURL + 'planets/');
         const p3 = fetch(baseURL + 'vehicles/');
 		let [people,planets,vehicles] = await Promise.all([p1,p2,p3])

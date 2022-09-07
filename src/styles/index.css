@@ -47,6 +47,23 @@ body{
 -webkit-box-shadow: -8px 16px 24px 0px rgba(145,145,145,0.77);
 -moz-box-shadow: -8px 16px 24px 0px rgba(145,145,145,0.77);
 transform: translateY(-3px);
-transition-duration: .3s;
+transition-duration: .4s;
+border-color: 0.7 solid white;
 
+}
+
+.text-detail{
+    color: white;
+}
+
+.text-detail:hover{
+    color:yellow;
+}
+
+.p-title{
+    color: #0DCAF0;
+}
+
+.p-title:hover{
+    color:yellow;
 }

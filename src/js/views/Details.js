@@ -17,7 +17,7 @@ export const Details = () => {
           <img src={starWarsImg} className="img-details img-top" alt="..."  />
         </div>
         <div className="col">
-          <h2 className="text-light">
+          <h2 className="text-detail">
             {store.details && store.details.properties.name}
           </h2>
             <p className=" text-light">
@@ -38,10 +38,10 @@ export const Details = () => {
         </div>
       </div>
 	  <hr className="linea" style={{color:"#33E0FF", widht:"100%", height:"5px"}}></hr>
-	  <div className="row" style={{color:"#33E0FF"}}>
+	  <div className="row p-title" style={{color:"#33E0FF"}}>
 	
 		<div className="col">
-			<h3 className="text-info">Name</h3>
+			<h3 className="p-title">Name</h3>
 			{store.details && store.details.properties.name}
 		</div>
 		
