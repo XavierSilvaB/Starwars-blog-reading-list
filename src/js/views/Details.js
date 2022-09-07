@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
 import { Link, useParams } from "react-router-dom";
 import { Context } from "../store/appContext";
-import starWarsImg from "../../img/star_wars_img.jpg";
+import starWarsImg from "../../img/starwars.jpg";
 
 export const Details = () => {
   const { store, actions } = useContext(Context);
@@ -37,11 +37,11 @@ export const Details = () => {
 			
         </div>
       </div>
-	  <hr className="linea" style={{color:"red", widht:"100%", height:"5px"}}></hr>
-	  <div className="row" style={{color:"red"}}>
+	  <hr className="linea" style={{color:"#33E0FF", widht:"100%", height:"5px"}}></hr>
+	  <div className="row" style={{color:"#33E0FF"}}>
 	
 		<div className="col">
-			<h3>Name</h3>
+			<h3 className="text-info">Name</h3>
 			{store.details && store.details.properties.name}
 		</div>
 		
@@ -49,9 +49,10 @@ export const Details = () => {
 		<h3>{params.endpoint == "people" ? "Birth": params.endpoint == "planets" ? "Diameter": "Model"}</h3>
 		{params.endpoint == "people" ? store.details && store.details.properties.birth_year : params.endpoint == "planets" ? store.details && store.details.properties.diameter : store.details && store.details.properties.model}
 		</div>
+    
 		
 		<div className="col">
-		<h3>{params.endpoint == "people" ? "Gender": params.endpoint == "planets" ? "Gravity": "vehicle_class"}</h3>
+		<h3 className="text-info">{params.endpoint == "people" ? "Gender": params.endpoint == "planets" ? "Gravity": "vehicle_class"}</h3>
 		{params.endpoint == "people" ? store.details && store.details.properties.gender : params.endpoint == "planets" ? store.details && store.details.properties.gravity : store.details && store.details.properties.vehicle_class}
 
 		</div>
@@ -71,6 +72,8 @@ export const Details = () => {
 		<h3>{params.endpoint == "people" ? "Eye color": params.endpoint == "planets" ?"orbital_period": "length"}</h3>
 		{params.endpoint == "people" ? store.details && store.details.properties.eye_color : params.endpoint == "planets" ? store.details && store.details.properties.orbital_period : store.details && store.details.properties.length}
 		</div>
+
+    
 	  </div>
     </div>
   );

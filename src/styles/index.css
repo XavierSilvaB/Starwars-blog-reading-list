@@ -40,3 +40,12 @@ body{
     border-radius: 15px;
 
 }
+
+.img-details:hover{
+    box-shadow: -8px 16px 24px 0px rgba(145,145,145,0.77);
+-webkit-box-shadow: -8px 16px 24px 0px rgba(145,145,145,0.77);
+-moz-box-shadow: -8px 16px 24px 0px rgba(145,145,145,0.77);
+transform: translateY(-3px);
+transition-duration: .3s;
+
+}
