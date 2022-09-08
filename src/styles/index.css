@@ -24,7 +24,8 @@ body{
 }
 
 .card-info:hover{
-    transform: translateY(-3px);
+    /* transform: translateY(-3px); */
+    transform: scale(1.03,1.03);
     transition-duration: .3s;
 
 }
@@ -49,6 +50,8 @@ body{
 transform: translateY(-3px);
 transition-duration: .4s;
 border-color: 0.7 solid white;
+transform: scale(1.04,1.04);
+transition-duration: .3s;
 
 }
 
